@@ -22,22 +22,28 @@ let package = Package(
   products: [
     .library(
       name: "UnityAdapterTarget",
-      targets: ["UnityAdapterTarget"]
+      targets: ["UnityAdapterTarget", "UnityAds"]
     )
   ],
   targets: [
     .target(
       name: "UnityAdapterTarget",
       dependencies: [
-        .target(name: "Adapter"),
+        .target(name: "UnityAdapter"),
       ],
       path: "UnityAdapterTarget"
     ),
     .binaryTarget(
-      name: "Adapter",
+      name: "UnityAdapter",
       url:
         "https://dl.google.com/googleadmobadssdk/mediation/ios/unity/UnityAdapter-4.16.0.0.zip",
-      checksum: ""
+      checksum: "f3f5bdc4b15a10c7a3f859a14dff86c0551e55bff388839deb184d4dd986e2b9"
+    ),
+    .binaryTarget(
+      name: "UnityAds",
+      url:
+        "https://github.com/Unity-Technologies/unity-ads-ios/releases/download/4.16.0/UnityAds.zip",
+      checksum: "60538a0a7d7b4467a4d4bd302154e99a56f95fb680801da63da6395be92c92cf"
     ),
   ]
 )
