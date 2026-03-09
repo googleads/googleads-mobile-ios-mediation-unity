@@ -43,13 +43,13 @@ let package = Package(
     .binaryTarget(
       name: "UnityAdapter",
       url:
-        "https://dl.google.com/googleadmobadssdk/mediation/ios/unity/UnityAdapter-4.16.6.1.zip",
+        "https://dl.google.com/googleadmobadssdk/mediation/ios/unity/UnityAdapter-4.17.0.0.zip",
       checksum: "3cd5dc6de8448f450ab7c0ca6cd0ede716c9e62b0dc691444bc7684d331c1166"
     ),
     .binaryTarget(
       name: "UnityAds",
       url:
-        "https://github.com/Unity-Technologies/unity-ads-ios/releases/download/4.16.6/UnityAds.zip",
+        "https://github.com/Unity-Technologies/unity-ads-ios/releases/download/4.17.0/UnityAds.zip",
       checksum: "f844ff77d03e07a196557e62cd5f0a46df04bc5029db12dcc63be90f28192e45"
     ),
   ]
