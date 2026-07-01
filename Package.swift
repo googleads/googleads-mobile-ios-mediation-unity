@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.6
 
 // Copyright 2025 Google LLC.
 //
@@ -22,10 +22,14 @@ let package = Package(
   products: [
     .library(
       name: "UnityAdapterTarget",
-      targets: ["UnityAdapterTarget", "UnityAds"]
+      targets: ["UnityAdapterTarget"]
     )
   ],
   dependencies: [
+    .package(
+      url: "https://github.com/Unity-Technologies/Unity-Ads-Swift-Package.git",
+      exact: "4.19.0"
+    ),
     .package(
       url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
       from: "13.0.0"
@@ -36,6 +40,7 @@ let package = Package(
       name: "UnityAdapterTarget",
       dependencies: [
         .target(name: "UnityAdapter"),
+        .product(name: "UnityAds", package: "Unity-Ads-Swift-Package"),
         .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads"),
       ],
       path: "UnityAdapterTarget"
@@ -44,13 +49,7 @@ let package = Package(
       name: "UnityAdapter",
       url:
         "https://dl.google.com/googleadmobadssdk/mediation/ios/unity/UnityAdapter-4.19.0.0.zip",
-      checksum: "4dc652078816f0ba2c21b9e504ea72dee7cd56720f1543db86865a0ff362a52b"
-    ),
-    .binaryTarget(
-      name: "UnityAds",
-      url:
-        "https://github.com/Unity-Technologies/unity-ads-ios/releases/download/4.19.0/UnityAds.zip",
-      checksum: "62cac3d0df3c8e0106f364f0e456f4edb42b6364dd9dc44b1d13985f70c2fbd1"
+      checksum: "18db0a99e3b09f30511ec21b0bd013751fb9fcc3457230479d230faf478895b1"
     ),
   ]
 )
