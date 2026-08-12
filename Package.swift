@@ -48,7 +48,7 @@ let package = Package(
     .binaryTarget(
       name: "UnityAdapter",
       url:
-        "https://dl.google.com/googleadmobadssdk/mediation/ios/unity/UnityAdapter-4.19.0.0.zip",
+        "https://dl.google.com/googleadmobadssdk/mediation/ios/unity/UnityAdapter-4.19.0.1.zip",
       checksum: "18db0a99e3b09f30511ec21b0bd013751fb9fcc3457230479d230faf478895b1"
     ),
   ]
