@@ -28,7 +28,7 @@ let package = Package(
   dependencies: [
     .package(
       url: "https://github.com/Unity-Technologies/Unity-Ads-Swift-Package.git",
-      exact: "4.20.0"
+      exact: "4.20.1"
     ),
     .package(
       url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
@@ -48,7 +48,7 @@ let package = Package(
     .binaryTarget(
       name: "UnityAdapter",
       url:
-        "https://dl.google.com/googleadmobadssdk/mediation/ios/unity/UnityAdapter-4.20.0.0.zip",
+        "https://dl.google.com/googleadmobadssdk/mediation/ios/unity/UnityAdapter-4.20.1.0.zip",
       checksum: "ac028000f147f57c2e3a843537a45b98bde700ae9ad4af34577a6af75424a1f6"
     ),
   ]
