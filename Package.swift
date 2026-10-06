@@ -49,7 +49,7 @@ let package = Package(
       name: "UnityAdapter",
       url:
         "https://dl.google.com/googleadmobadssdk/mediation/ios/unity/UnityAdapter-4.21.0.0.zip",
-      checksum: "03d9b82e58ffcd88fe0df6e6690de85da7dfbdfd56e7e8e7a34cd5705e49daee"
+      checksum: "875ff68192f793039fb6dfaa7442b3044309b1fb705803829a98a5b4b7daa29e"
     ),
   ]
 )
